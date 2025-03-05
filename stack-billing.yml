@@ -44,7 +44,7 @@ services:
       postgres_db:
         condition: service_healthy
     ports:
-      - 8080:8080 
+      - 8081:8080 
 #Billin app frontend service
   billingapp-front:
     build:

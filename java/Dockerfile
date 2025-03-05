@@ -6,6 +6,6 @@ ARG JAR_FILE=billing-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} /app.jar
  # use a volume is mor efficient and speed that filesystem
 VOLUME /tmp
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar /app.jar" ]
 
